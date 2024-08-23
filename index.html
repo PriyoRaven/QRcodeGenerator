@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="icon" type="image/x-icon" href="assets/QRCode.png">
+    <link rel=" stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="text-input" placeholder="Enter text or URL">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qrCode"></div>
+        <div class="btn-cont">
+            <button id="download-btn" onclick="downloadQRCode()" style="display: none;">
+                <i class='bx bx-download'></i>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/PriyoRaven" target="_blank">
+            <p>Created by Priyo</p>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
